@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14 Jul 2017 10:54:19 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.takealotProject.model.Registrationtbl" table="registrationtbl" catalog="takealot" optimistic-lock="version">
+        <id name="registrationId" type="java.lang.Integer">
+            <column name="registration_id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="45" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="last_name" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="phoneNumber" type="string">
+            <column name="phone_number" length="11" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="birthDate" type="date">
+            <column name="birth_date" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>
